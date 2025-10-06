@@ -1,3 +1,3 @@
-FROM iamdevopstrainer/tomcat:base
-COPY ABCtechnologies-1.0.war /usr/local/tomcat/webapps/
+FROM tomcat:9-jdk11
+COPY ABCtechnologies-1.0.war /usr/local/tomcat/webapps/ABCtechnologies.war
 CMD ["catalina.sh", "run"]
